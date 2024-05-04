@@ -1,0 +1,10 @@
+.post_list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.weather_card{
+  padding: 10px;
+}
