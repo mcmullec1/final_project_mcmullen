@@ -231,6 +231,7 @@ function App() {
         </Flex>
 
         <Routes>
+          <Route path="/" element={<Home colorMode={colorMode} style={style}/>}></Route>
           <Route path="/custom" element={<Custom colorMode={colorMode} style={style}/>}></Route>
           <Route path="/explore" element={<Explore colorMode={colorMode} style={style} />}></Route>
           <Route path="/home" element={<Home colorMode={colorMode} style={style} />}></Route>
