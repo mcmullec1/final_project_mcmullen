@@ -4,7 +4,7 @@ import logo_light from "/icons/weather_logo_light.png"
 import about_dark from "/icons/about2.png"
 import about_light from "/icons/about_light.png"
 
-function About({colorMode}) {
+function About(props) {
   
 
     return(

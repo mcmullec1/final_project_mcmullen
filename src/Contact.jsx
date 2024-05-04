@@ -25,7 +25,7 @@ const SignupSchema = Yup.object().shape({
 
   });
 
-function Contact({colorMode}) {
+function Contact(props) {
 
 
     const form_style = {
