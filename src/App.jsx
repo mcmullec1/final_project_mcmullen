@@ -236,9 +236,11 @@ function App() {
           <Route path="/home" element={<Home colorMode={colorMode} style={style} />}></Route>
           <Route path="/contact" element={<Contact colorMode={colorMode} />}></Route>
           <Route path="/about" element={<About colorMode={colorMode} />}></Route>
+          {/*
           <Route path="/">
             <Navigate to="#/home" />
           </Route>
+          */}
           {/*<Route path="/instructions" element={<Instructions />}></Route>*/}
         </Routes>
 
