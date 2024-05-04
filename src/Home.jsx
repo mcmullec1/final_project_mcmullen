@@ -31,7 +31,7 @@ function Home(props) {
             justifyContent="center"
             >
                 <Image
-                    src = 'src/weather_images/globe.gif'
+                    src = '/weather_images/globe.gif'
                     alt="globe spinning"
                     objectFit='cover'
                     margin='10px 10px 10px 10px'
@@ -39,7 +39,7 @@ function Home(props) {
                 ></Image>
 
                 <Image
-                    src = {props.colorMode === "dark" ? "src/icons/weather_logo.png" : "src/icons/weather_logo_light.png"}
+                    src = {props.colorMode === "dark" ? "/icons/weather_logo.png" : "/icons/weather_logo_light.png"}
                     //src = {logo_src}
                     alt="logo"
                     objectFit='cover'
