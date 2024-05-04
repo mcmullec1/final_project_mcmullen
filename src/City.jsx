@@ -94,10 +94,11 @@ function City({city}){
     else if(weather["weather_code"]==0){
         weather_img = sun
         bg_colour = "linear-gradient(#26A8DF, #7FB2C8)"
-        if(time.getHours() >= 21 || time.getHours() <= 5){
+        /*if(time.getHours() >= 21 || time.getHours() <= 5){
             bg_colour = "linear-gradient(#472F8A, #132997)"
             weather_img = moon
         }
+        */
         //console.log(weather["weather_code"],"ITS SUN")
     }
     else{
