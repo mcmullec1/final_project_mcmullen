@@ -22,7 +22,7 @@ console.log(city_options)
 
 
 
-function Custom({colorMode}) {
+function Custom(props) {
   
   //const [cities, setCities] = useState([])
   //const city_list = ["London", "Los Angeles", "New York City", "Paris","Toronto", "Sydney", "Tokyo", "Dubai", "Amsterdam", "Chicago", "Berlin"]
