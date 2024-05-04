@@ -1,0 +1,112 @@
+[
+    {
+      "Geoname ID": 6172932,
+      "Name": "Uxbridge",
+      "ASCII Name": "Uxbridge",
+      "Country Code": "CA",
+      "Country name EN": "Canada",
+      "Population": 21176,
+      "Timezone": "America/Toronto",
+      "LABEL EN": "Canada",
+      "Coordinates": "44.10012, -79.11628"
+    },
+    {
+      "Geoname ID": 2639389,
+      "Name": "Richmond",
+      "ASCII Name": "Richmond",
+      "Country Code": "GB",
+      "Country name EN": "United Kingdom",
+      "Population": 21469,
+      "Timezone": "Europe/London",
+      "LABEL EN": "United Kingdom",
+      "Coordinates": "51.46171, -0.30633"
+    },
+    {
+      "Geoname ID": 6173012,
+      "Name": "Val-des-Monts",
+      "ASCII Name": "Val-des-Monts",
+      "Country Code": "CA",
+      "Country name EN": "Canada",
+      "Population": 9539,
+      "Timezone": "America/Toronto",
+      "LABEL EN": "Canada",
+      "Coordinates": "45.6501, -75.66604"
+    },
+    {
+      "Geoname ID": 5969782,
+      "Name": "Hamilton",
+      "ASCII Name": "Hamilton",
+      "Country Code": "CA",
+      "Country name EN": "Canada",
+      "Population": 519949,
+      "Timezone": "America/Toronto",
+      "LABEL EN": "Canada",
+      "Coordinates": "43.25011, -79.84963"
+    },
+    {
+      "Geoname ID": 6087029,
+      "Name": "Nepean",
+      "ASCII Name": "Nepean",
+      "Country Code": "CA",
+      "Country name EN": "Canada",
+      "Population": 180000,
+      "Timezone": "America/Toronto",
+      "LABEL EN": "Canada",
+      "Coordinates": "45.33619, -75.7225"
+    },
+    {
+      "Geoname ID": 4153188,
+      "Name": "Destin",
+      "ASCII Name": "Destin",
+      "Country Code": "US",
+      "Country name EN": "United States",
+      "Population": 13523,
+      "Timezone": "America/Chicago",
+      "LABEL EN": "United States",
+      "Coordinates": "30.39353, -86.49578"
+    },
+    {
+      "Geoname ID": 5090347,
+      "Name": "North Conway",
+      "ASCII Name": "North Conway",
+      "Country Code": "US",
+      "Country name EN": "United States",
+      "Population": 2349,
+      "Timezone": "America/New_York",
+      "LABEL EN": "United States",
+      "Coordinates": "44.05368, -71.1284"
+    },
+    {
+      "Geoname ID": 6176823,
+      "Name": "Waterloo",
+      "ASCII Name": "Waterloo",
+      "Country Code": "CA",
+      "Country name EN": "Canada",
+      "Population": 104986,
+      "Timezone": "America/Toronto",
+      "LABEL EN": "Canada",
+      "Coordinates": "43.4668, -80.51639"
+    },
+    {
+      "Geoname ID": 5992500,
+      "Name": "Kingston",
+      "ASCII Name": "Kingston",
+      "Country Code": "CA",
+      "Country name EN": "Canada",
+      "Population": 114195,
+      "Timezone": "America/Toronto",
+      "LABEL EN": "Canada",
+      "Coordinates": "44.22976, -76.48098"
+    },
+    {
+      "Geoname ID": 6167865,
+      "Name": "Toronto",
+      "ASCII Name": "Toronto",
+      "Country Code": "CA",
+      "Country name EN": "Canada",
+      "Population": 2600000,
+      "Timezone": "America/Toronto",
+      "LABEL EN": "Canada",
+      "Coordinates": "43.70643, -79.39864"
+    }
+  ]

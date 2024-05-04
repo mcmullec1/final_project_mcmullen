@@ -5,6 +5,7 @@ import Cities from './Cities';
 import Custom from './Custom'
 import Contact from './Contact'
 import About from './About'
+import Family from './Family'
 import Instructions from './Instructions'
 import Explore from './Explore'
 import Home from './Home'
@@ -237,6 +238,7 @@ function App() {
           <Route path="/home" element={<Home colorMode={colorMode} style={style} />}></Route>
           <Route path="/contact" element={<Contact colorMode={colorMode} />}></Route>
           <Route path="/about" element={<About colorMode={colorMode} />}></Route>
+          <Route path="/family" element={<Family colorMode={colorMode} />}></Route>
           {/*
           <Route path="/">
             <Navigate to="#/home" />
