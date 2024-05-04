@@ -18,9 +18,11 @@ function Family(props) {
         let city_list = []
         let my_cities = ["Uxbridge", "Richmond", "Val-des-Monts", "Nepean", "Destin", "North Conway", "Hamilton", "Waterloo", "Kingston", "Toronto"];
         for(let i = 0; i < city_data.length; i++){
+            console.log(city_data[i])
             if(my_cities.includes(city_data[i]["ascii_name"])){
             city_list.push(city_data[i])} 
       } 
+      console.log(city_list)
       return city_list
     }
 
