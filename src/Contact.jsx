@@ -2,6 +2,10 @@ import { Center, ChakraProvider, useColorMode, Button, Image, Flex, Text, Link, 
 import { Formik, Form, Field } from "formik";
 import { color } from 'framer-motion';
 import * as Yup from "yup";
+import logo_dark from "/icons/weather_logo.png"
+import logo_light from "/icons/weather_logo_light.png"
+import feeling_dark from "/icons/feeling.png"
+import feeling_light from "src/icons/feeling_light.png"
 
 
 const SignupSchema = Yup.object().shape({
@@ -82,7 +86,7 @@ function Contact({colorMode}) {
                 <Link href = "/home">
                     <Image
                         //src="src/icons/weather_logo_light.png"
-                        src = {colorMode === "dark" ? "src/icons/weather_logo.png" : "src/icons/weather_logo_light.png"}
+                        src = {props.colorMode === "dark" ? logo_dark : logo_light}
                         alt="sun"
                         objectFit='cover'
                         margin='40px 10px 40px 10px'
@@ -152,7 +156,7 @@ function Contact({colorMode}) {
                         >
                             <Image
 
-                                src = {colorMode === "dark" ? "src/icons/feeling.png" : "src/icons/feeling_light.png"}
+                                src = {colorMode === "dark" ? feeling_dark : feeling_light}
                                 alt="sun"
                                 objectFit='contain'
                                 w={{base:'100%', sm:'75%', lg:'100%'}}

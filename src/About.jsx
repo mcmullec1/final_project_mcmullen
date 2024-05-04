@@ -1,4 +1,8 @@
 import { Center, ChakraProvider, useColorMode, Button, Image, Flex, Text, Link, Box } from '@chakra-ui/react'
+import logo_dark from "/icons/weather_logo.png"
+import logo_light from "/icons/weather_logo_light.png"
+import about_dark from "/icons/about2.png"
+import about_light from "/icons/about_light.png"
 
 function About({colorMode}) {
   
@@ -14,7 +18,7 @@ function About({colorMode}) {
             <Link href = "/home">
                 <Image
                     //src="src/icons/weather_logo_light.png"
-                    src = {colorMode === "dark" ? "src/icons/weather_logo.png" : "src/icons/weather_logo_light.png"}
+                    src = {props.colorMode === "dark" ? logo_dark : logo_light}
                     alt="sun"
                     objectFit='cover'
                     margin='40px 10px 40px 10px'
@@ -35,7 +39,7 @@ function About({colorMode}) {
                     justifyContent='center'
                 >
                     <Image
-                        src = {colorMode === "dark" ? "src/icons/about2.png" : "src/icons/about_light.png"}
+                        src = {colorMode === "dark" ? about_dark : about_light}
                         alt="sun"
                         display= 'block'
                         objectFit='contain'
