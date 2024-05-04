@@ -209,9 +209,9 @@ function App() {
             h = '100%'
             flexDirection={{base:'column', sm: 'row', md:'row'}}
           >
-            <a href='/home'>HOME</a>
-            <a href='/custom'>CUSTOM</a>
-            <a href='/explore'>EXPLORE</a>
+            <a href='#/home'>HOME</a>
+            <a href='#/custom'>CUSTOM</a>
+            <a href='#/explore'>EXPLORE</a>
           </Flex>
 
           <Flex
@@ -222,8 +222,8 @@ function App() {
             h = '100%'
             flexDirection={{base:'column', sm: 'row', md:'row'}}
           >
-            <a href='/contact'>CONTACT US</a>
-            <a href='/about'>ABOUT US</a>
+            <a href='#/contact'>CONTACT US</a>
+            <a href='#/about'>ABOUT US</a>
             <Button bg='white' onClick={toggleColorMode}>{colorMode === "light" ? <MoonIcon color="#49497B"/> : <SunIcon color="#49497B"/>}</Button>
           </Flex>
           
