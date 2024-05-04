@@ -11,7 +11,7 @@ import Home from './Home'
 import { Center, ChakraProvider, useColorMode, useColorModeValue, Button, Image, Flex, Switch } from '@chakra-ui/react'
 import { Box } from '@chakra-ui/react'
 import { Badge } from '@chakra-ui/react'
-import { BrowserRouter,HashRouter, Routes, Route, Navigate, Link } from "react-router-dom";
+import { BrowserRouter,HashRouter, Routes, Route, Navigate, Link, Redirect } from "react-router-dom";
 import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 import { ColorModeScript } from "@chakra-ui/react";
 
