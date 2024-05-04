@@ -5,7 +5,7 @@ import * as Yup from "yup";
 import logo_dark from "/icons/weather_logo.png"
 import logo_light from "/icons/weather_logo_light.png"
 import feeling_dark from "/icons/feeling.png"
-import feeling_light from "src/icons/feeling_light.png"
+import feeling_light from "/icons/feeling_light.png"
 
 
 const SignupSchema = Yup.object().shape({
