@@ -1,5 +1,6 @@
 import { Center, ChakraProvider, IconButton, useColorMode, useColorModeValue, Button, Image, Flex, Text, Link } from '@chakra-ui/react'
 import { useEffect } from 'react';
+import globe from "/weather_images/globe.gif"
 
 
 function Home(props) {
@@ -31,7 +32,8 @@ function Home(props) {
             justifyContent="center"
             >
                 <Image
-                    src = '/weather_images/globe.gif'
+                    //src = '/weather_images/globe.gif'
+                    src = {globe}
                     alt="globe spinning"
                     objectFit='cover'
                     margin='10px 10px 10px 10px'
