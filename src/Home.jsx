@@ -58,7 +58,7 @@ function Home(props) {
                     width='220px'
                     justifyContent='space-between'
                 >
-                    <Link href='/explore'>
+                    <Link href='#/explore'>
                         <Button
                             variant='solid'
                             borderRadius='80px'
@@ -70,7 +70,7 @@ function Home(props) {
                         
                         >Explore</Button>
                     </Link>
-                    <Link href='/custom'>
+                    <Link href='#/custom'>
                         <Button
                             variant='solid'
                             borderRadius='80px'
