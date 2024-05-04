@@ -12,6 +12,7 @@ import snow from "/weather_images/snow.png"
 import thunder from "/weather_images/thunderstorm.png"
 import sun_cloud from "/weather_images/sun_cloud.png"
 import sun from "/weather_images/sun.png"
+import moon from "/weather_images/moon.png"
 
 
 function City({city}){
@@ -93,6 +94,10 @@ function City({city}){
     else if(weather["weather_code"]==0){
         weather_img = sun
         bg_colour = "linear-gradient(#26A8DF, #7FB2C8)"
+        if(time.getHours >= 21 || time.getHours() <= 5){
+            bg_colour = "linear-gradient(#472F8A, #132997)"
+            weather_img = moon
+        }
         //console.log(weather["weather_code"],"ITS SUN")
     }
     else{
