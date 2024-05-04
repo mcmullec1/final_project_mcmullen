@@ -65,7 +65,7 @@ function About(props) {
                     >Hello my name is Clare and welcome to my website, your global hub for staying connected and exploring the world's weather in real-time! ⛅  🌧️ ☀️ ⛈️ ❄️ 🌩️ </Text>
                     <Text
                         padding='10px'
-                    >This site allows users effortlessly track the weather and local time in custom cities across the globe, ensuring you're always in sync with your loved ones' lives no matter where they are. Whether it's keeping tabs on family members in distant lands or coordinating with friends across time zones, the customizable widgets make it easy to stay informed and connected.</Text>
+                    >This site allows users to effortlessly track the weather and local time in custom cities across the globe, ensuring you're always in sync with your loved ones' lives no matter where they are. Whether it's keeping tabs on family members in distant lands or coordinating with friends across time zones, the customizable widgets make it easy to stay informed and connected.</Text>
                     <Text
                         padding='10px'
                     >Join us on our mission to bridge distances, foster connections, and embrace the beauty of global diversity. And shoutout to my Babcia who thought it was a cool idea! ❤️</Text>
