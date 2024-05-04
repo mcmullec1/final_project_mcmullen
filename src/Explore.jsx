@@ -8,6 +8,9 @@ import { Box } from '@chakra-ui/react'
 import { Badge } from '@chakra-ui/react'
 //import city_data from './geo_keyed.json';
 import city_data from './all_cities.json';
+import globe from "/weather_images/globe.gif"
+import logo_dark from "/icons/weather_logo.png"
+import logo_light from "/icons/weather_logo_light.png"
 
 
 function Explore(props) {
@@ -233,7 +236,7 @@ function Explore(props) {
           <Link href="/home">
             <Image
               //src="src/icons/weather_logo_light.png"
-              src = {props.colorMode === "dark" ? "src/icons/weather_logo.png" : "src/icons/weather_logo_light.png"}
+              src = {props.colorMode === "dark" ? logo_dark : logo_light}
               alt="sun"
               objectFit='cover'
               margin='40px 10px 40px 10px'
@@ -281,7 +284,7 @@ function Explore(props) {
 
             <IconButton
               icon = {<Image
-                src = 'src/weather_images/globe.gif'
+                src = {globe}
                 alt="globe spinning"
                 objectFit='cover'
                 h="75px"

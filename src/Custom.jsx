@@ -8,6 +8,8 @@ import { Badge } from '@chakra-ui/react'
 import { CUIAutoComplete } from "chakra-ui-autocomplete";
 import React from 'react'
 import city_import from './geo_keyed.json';
+import logo_dark from "/icons/weather_logo.png"
+import logo_light from "/icons/weather_logo_light.png"
 
 
 let city_options = []
@@ -123,7 +125,7 @@ function Custom({colorMode}) {
         <Link href = "/home">
           <Image
             //src="src/icons/weather_logo_light.png"
-            src = {colorMode === "dark" ? "src/icons/weather_logo.png" : "src/icons/weather_logo_light.png"}
+            src = {props.colorMode === "dark" ? logo_dark : logo_light}
             alt="sun"
             objectFit='cover'
             margin='40px 10px 40px 10px'

@@ -5,6 +5,13 @@ import { Box } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
 import { Flex } from '@chakra-ui/react'
 import { Text } from '@chakra-ui/react'
+import cloud from "/weather_images/cloud.png"
+import rain from "src/weather_images/rain.png"
+import freezing_rain from "src/weather_images/freezing_rain.png"
+import snow from "src/weather_images/snow.png"
+import thunder from "src/weather_images/thunderstorm.png"
+import sun_cloud from "src/weather_images/sun_cloud.png"
+import sun from "src/weather_images/sun.png"
 
 
 function City({city}){
@@ -51,26 +58,26 @@ function City({city}){
         }
     })
 
-    let weather_img = "src/weather_images/cloud.png"
+    let weather_img = cloud
     let bg_colour = "linear-gradient(#5F767D, #AEB5B8)"
 
 
     if((weather["weather_code"]>50 && weather["weather_code"]<56)|| (weather["weather_code"]>=80 && weather["weather_code"]<=86)|| (weather["weather_code"]>60 && weather["weather_code"]<=65)){
-        weather_img = "src/weather_images/rain.png"
+        weather_img = rain
         bg_colour = "#626290"
         //console.log(weather["weather_code"],"ITS RAINING")
     }
     else if((weather["weather_code"]>=56 && weather["weather_code"]<=57) || (weather["weather_code"]>=66 && weather["weather_code"]<=67)){
-        weather_img = "src/weather_images/freezing_rain.png"
+        weather_img = freezing_rain
         bg_colour = "#626290"
         //console.log(weather["weather_code"],"ITS FREEZING RAINING")
     }
     else if(weather["weather_code"]>=71 && weather["weather_code"]<=77){
-        weather_img = "src/weather_images/snow.png"
+        weather_img = snow
         //console.log(weather["weather_code"],"ITS SNOWING")
     }
     else if(weather["weather_code"]>=95 && weather["weather_code"]<=99){
-        weather_img = "src/weather_images/thunderstorm.png"
+        weather_img = thunder
         bg_colour = "linear-gradient(#472F8A, #132997)"
         //console.log(weather["weather_code"],"ITS THUNDER")
     }
@@ -79,12 +86,12 @@ function City({city}){
         console.log(weather["weather_code"],"ITS NIGHT")}
     */
     else if(weather["weather_code"]>=1 && weather["weather_code"]<=2){
-        weather_img = "src/weather_images/sun_cloud.png"
+        weather_img = sun_cloud
         bg_colour = "linear-gradient(#26A8DF, #7FB2C8)"
         //console.log(weather["weather_code"],"ITS PARTLY SUN")
     }
     else if(weather["weather_code"]==0){
-        weather_img = "src/weather_images/sun.png"
+        weather_img = sun
         bg_colour = "linear-gradient(#26A8DF, #7FB2C8)"
         //console.log(weather["weather_code"],"ITS SUN")
     }
