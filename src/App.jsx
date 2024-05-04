@@ -11,7 +11,7 @@ import Home from './Home'
 import { Center, ChakraProvider, useColorMode, useColorModeValue, Button, Image, Flex, Switch } from '@chakra-ui/react'
 import { Box } from '@chakra-ui/react'
 import { Badge } from '@chakra-ui/react'
-import { BrowserRouter, Routes, Route, Navigate, Link } from "react-router-dom";
+import { BrowserRouter,HashRouter, Routes, Route, Navigate, Link } from "react-router-dom";
 import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 import { ColorModeScript } from "@chakra-ui/react";
 
@@ -183,7 +183,7 @@ function App() {
   return(
     <>
     <ChakraProvider>
-    <BrowserRouter>
+    <HashRouter>
         
     <Flex
           w='100%'
@@ -241,7 +241,7 @@ function App() {
 
 
 
-      </BrowserRouter>
+      </HashRouter>
       {/*<Button onClick={toggleColorMode}>Toggle {colorMode === "light" ? "Dark" : "Light"}</Button>*/}
       {/*<Box w='50%'>
         <Center><Badge>This is Chakra</Badge></Center>
