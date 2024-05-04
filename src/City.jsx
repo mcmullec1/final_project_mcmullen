@@ -6,12 +6,12 @@ import { Image } from '@chakra-ui/react'
 import { Flex } from '@chakra-ui/react'
 import { Text } from '@chakra-ui/react'
 import cloud from "/weather_images/cloud.png"
-import rain from "src/weather_images/rain.png"
-import freezing_rain from "src/weather_images/freezing_rain.png"
-import snow from "src/weather_images/snow.png"
-import thunder from "src/weather_images/thunderstorm.png"
-import sun_cloud from "src/weather_images/sun_cloud.png"
-import sun from "src/weather_images/sun.png"
+import rain from "/weather_images/rain.png"
+import freezing_rain from "/weather_images/freezing_rain.png"
+import snow from "/weather_images/snow.png"
+import thunder from "/weather_images/thunderstorm.png"
+import sun_cloud from "/weather_images/sun_cloud.png"
+import sun from "/weather_images/sun.png"
 
 
 function City({city}){
