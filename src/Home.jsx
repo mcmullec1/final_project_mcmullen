@@ -1,6 +1,8 @@
 import { Center, ChakraProvider, IconButton, useColorMode, useColorModeValue, Button, Image, Flex, Text, Link } from '@chakra-ui/react'
 import { useEffect } from 'react';
 import globe from "/weather_images/globe.gif"
+import logo_dark from "/icons/weather_logo.png"
+import logo_light from "/icons/weather_logo_light.png"
 
 
 function Home(props) {
@@ -41,7 +43,7 @@ function Home(props) {
                 ></Image>
 
                 <Image
-                    src = {props.colorMode === "dark" ? "/icons/weather_logo.png" : "/icons/weather_logo_light.png"}
+                    src = {props.colorMode === "dark" ? logo_dark : logo_light}
                     //src = {logo_src}
                     alt="logo"
                     objectFit='cover'
