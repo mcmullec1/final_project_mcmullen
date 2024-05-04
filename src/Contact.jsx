@@ -156,7 +156,7 @@ function Contact(props) {
                         >
                             <Image
 
-                                src = {colorMode === "dark" ? feeling_dark : feeling_light}
+                                src = {props.colorMode === "dark" ? feeling_dark : feeling_light}
                                 alt="sun"
                                 objectFit='contain'
                                 w={{base:'100%', sm:'75%', lg:'100%'}}

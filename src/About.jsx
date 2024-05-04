@@ -39,7 +39,7 @@ function About(props) {
                     justifyContent='center'
                 >
                     <Image
-                        src = {colorMode === "dark" ? about_dark : about_light}
+                        src = {props.colorMode === "dark" ? about_dark : about_light}
                         alt="sun"
                         display= 'block'
                         objectFit='contain'
