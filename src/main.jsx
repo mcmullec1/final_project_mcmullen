@@ -37,6 +37,7 @@ const theme = extendTheme({
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+    {localStorage.setItem('chakra-ui-color-mode', 'dark')}
     <ChakraProvider theme={theme} cssVarsRoot="body">
       <App />
     </ChakraProvider>
