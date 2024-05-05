@@ -65,7 +65,7 @@ function City({city}){
 
     let weather_img = cloud
     let bg_colour = "linear-gradient(#5F767D, #AEB5B8)"
-    console.log(dateTimeFormat.formatToParts(military_time))
+    console.log(String(military_time).split(":"))
 
 
     if((weather["weather_code"]>50 && weather["weather_code"]<56)|| (weather["weather_code"]>=80 && weather["weather_code"]<=86)|| (weather["weather_code"]>60 && weather["weather_code"]<=65)){
