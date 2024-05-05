@@ -4,8 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { ColorModeScript } from "@chakra-ui/react";
-//import { useColorMode } from '@chakra-ui/react'
-//import theme from './theme.js'
+
 
 
 const theme = extendTheme({
@@ -39,10 +38,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ColorModeScript initialColorMode={theme.config.initialColorMode} />
     <ChakraProvider theme={theme} cssVarsRoot="body">
-    {/*<ColorModeScript initialColorMode={theme.config.initialColorMode} />*/}
-      {/*<ColorModeScript initialColorMode={theme.config.initialColorMode} />*/}
       <App />
-
     </ChakraProvider>
   </React.StrictMode>,
 )

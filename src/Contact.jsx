@@ -1,6 +1,5 @@
 import { Center, ChakraProvider, useColorMode, Button, Image, Flex, Text, Link, Box } from '@chakra-ui/react'
 import { Formik, Form, Field } from "formik";
-import { color } from 'framer-motion';
 import * as Yup from "yup";
 import logo_dark from "/icons/weather_logo.png"
 import logo_light from "/icons/weather_logo_light.png"
@@ -9,6 +8,8 @@ import feeling_light from "/icons/feeling_light.png"
 
 
 const SignupSchema = Yup.object().shape({
+
+    //setting the requirements for contact form
     firstName: Yup.string()
       .min(2, "Too Short!")
       .max(50, "Too Long!")
@@ -27,7 +28,7 @@ const SignupSchema = Yup.object().shape({
 
 function Contact(props) {
 
-
+    //adding styling to the form elements
     const form_style = {
         margin:'20px',
         padding:'20px',
@@ -83,9 +84,8 @@ function Contact(props) {
                 flexDirection="column"
                 alignItems="center"
             >
-                <Link href = "/home">
+                <Link href = "#/home">
                     <Image
-                        //src="src/icons/weather_logo_light.png"
                         src = {props.colorMode === "dark" ? logo_dark : logo_light}
                         alt="the weather tracker logo written in a cloud like font"
                         objectFit='cover'
@@ -120,27 +120,27 @@ function Contact(props) {
                                     
                                             <Flex
                                             flexDirection="row">
-                                                <Field name="firstName" placeholder="First Name" style={field_style} />
+                                                <Field name="firstName" placeholder="First Name" style={field_style} label="first name" />
                                                 {errors.firstName && touched.firstName ? (
                                                     <div style={error_style}>{errors.firstName}</div>
                                                 ) : null}
                                             </Flex>
                                             <Flex
                                             flexDirection="row">
-                                                <Field name="lastName" placeholder="Last Name" style={field_style} />
+                                                <Field name="lastName" placeholder="Last Name" style={field_style} label="last name" />
                                                 {errors.lastName && touched.lastName ? (
                                                     <div style={error_style}>{errors.lastName}</div>
                                                 ) : null}
                                             </Flex>
                                             <Flex
                                             flexDirection="row">
-                                                <Field name="email" type="email" placeholder="Email Address" style={field_style} />
+                                                <Field name="email" type="email" placeholder="Email Address" style={field_style} label="email" />
                                                 {errors.email && touched.email ? <div style={error_style}>{errors.email}</div> : <div style={req_style}>Required</div>}
                 
                                             </Flex>
                                             <Flex
                                             flexDirection="column">
-                                                <Field name="message" placeholder="" style={field_style} component="textarea" rows="4" />
+                                                <Field name="message" placeholder="" style={field_style} component="textarea" rows="4" label="message" />
                                                 {errors.message && touched.message ? <div style={error_style}>{errors.message}</div> : null}
                 
                                             </Flex>

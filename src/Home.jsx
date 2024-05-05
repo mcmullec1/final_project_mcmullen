@@ -7,22 +7,7 @@ import logo_light from "/icons/weather_logo_light.png"
 
 function Home(props) {
 
-    //const { colorMode, toggleColorMode } = useColorMode();
-    /*
-    useEffect(() => {
-        if (localStorage.getItem('chakra-ui-color-mode') === 'light' && colorMode === 'dark') {
-          setTimeout(() => toggleColorMode(), 1500)
-        } else if (localStorage.getItem('chakra-ui-color-mode') === 'dark' && colorMode === 'light') {
-          setTimeout(() => toggleColorMode(), 1500)
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-      }, [])
-    
-    */
-    //const logo_src = useColorModeValue("src/icons/weather_logo_light.png", "src/icons/weather_logo.png")
-    console.log(props.colorMode)
-    //const button_bg = useColorModeValue("#FFFFFF", "#26A8DF")
-
+  
     return(
         
         <ChakraProvider>
@@ -34,7 +19,6 @@ function Home(props) {
             justifyContent="center"
             >
                 <Image
-                    //src = '/weather_images/globe.gif'
                     src = {globe}
                     alt="a blue and green globe spinning"
                     objectFit='cover'
@@ -44,11 +28,9 @@ function Home(props) {
 
                 <Image
                     src = {props.colorMode === "dark" ? logo_dark : logo_light}
-                    //src = {logo_src}
                     alt="the weather tracker logo written in a cloud like font"
                     objectFit='cover'
                     margin='40px 10px 40px 10px'
-                    //h="75px"
                     w = {{base:'99%', sm: '500px', md:'750px'}}
 
                 ></Image>

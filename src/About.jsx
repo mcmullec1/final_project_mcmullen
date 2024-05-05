@@ -1,4 +1,4 @@
-import { Center, ChakraProvider, useColorMode, Button, Image, Flex, Text, Link, Box } from '@chakra-ui/react'
+import { ChakraProvider, Image, Flex, Text, Link } from '@chakra-ui/react'
 import logo_dark from "/icons/weather_logo.png"
 import logo_light from "/icons/weather_logo_light.png"
 import about_dark from "/icons/about2.png"
@@ -15,9 +15,8 @@ function About(props) {
             alignItems="center"
             minH='calc(85vh)'
         >
-            <Link href = "/home">
+            <Link href = "#/home">
                 <Image
-                    //src="src/icons/weather_logo_light.png"
                     src = {props.colorMode === "dark" ? logo_dark : logo_light}
                     alt="the weather tracker logo written in a cloud like font"
                     objectFit='cover'
@@ -40,7 +39,7 @@ function About(props) {
                 >
                     <Image
                         src = {props.colorMode === "dark" ? about_dark : about_light}
-                        alt="sun"
+                        alt="cloud with text about us"
                         display= 'block'
                         objectFit='contain'
                         maxW='310px'
@@ -52,7 +51,6 @@ function About(props) {
                 <Flex
                     w={{base:"80%", sm:"70%", lg:"60%"}}
                     maxW='600px'
-
                     flexDirection='column'
                     margin='15px'
                     padding='20px'
