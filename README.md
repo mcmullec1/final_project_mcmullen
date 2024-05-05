@@ -68,6 +68,18 @@ The site is built using the Chakra UI framework which was particularily benefici
 ##### App.css, index.css
 - a small amount of styling, majority was done with Chakra UI props
 
+#### References
+
+koolamusic (2020) Chakra-UI AutoComplete [Source code]. https://github.com/koolamusic/chakra-ui-autocomplete#readme
+
+sitek94 (2022) Deploy Vite app to GitHub Pages using GitHub Actions [Source code]. https://github.com/sitek94/vite-deploy-demo
+
+Dhulipalla, K (2024) react-router-example [Source code] https://codesandbox.io/p/sandbox/react-router-example-1ot1g3
+
+Dhulipalla, K (2024) react-forms-example [Source code] https://codesandbox.io/p/sandbox/react-forms-example-pq5m9o
+
+
+
 
 
 
