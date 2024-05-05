@@ -44,13 +44,17 @@ function City({city}){
     //console.log(city['ascii_name'], city.timezone)
     const initial_now = new Date()
     const initial_time = new Intl.DateTimeFormat('en-US', {timeZone: timezone, timeStyle: 'short', hour12: true}).format(initial_now)
+    const initial_military = new Intl.DateTimeFormat('en-US', {timeZone: timezone, timeStyle: 'short', hour12: false}).format(initial_now)
     const [time, setTime] = useState(initial_time)
+    const [military_time, setMilitaryTime] = useState()
 
     useEffect(() => {
         async function getTime(){
             const now = new Date()
             const current_time = new Intl.DateTimeFormat('en-US', {timeZone: timezone, timeStyle: 'short', hour12: true}).format(now)
+            const current_military = new Intl.DateTimeFormat('en-US', {timeZone: timezone, timeStyle: 'short', hour12: false}).format(now)
             setTime(current_time)
+            setMilitaryTime(current_military)
         }
         getTime()
         var timer = setInterval(getTime, 30000)
@@ -61,6 +65,7 @@ function City({city}){
 
     let weather_img = cloud
     let bg_colour = "linear-gradient(#5F767D, #AEB5B8)"
+    console.log(military_time)
 
 
     if((weather["weather_code"]>50 && weather["weather_code"]<56)|| (weather["weather_code"]>=80 && weather["weather_code"]<=86)|| (weather["weather_code"]>60 && weather["weather_code"]<=65)){
