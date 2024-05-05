@@ -12,13 +12,13 @@ Welcome to my website! This site allows users to effortlessly track the weather 
 
 #### APIs / Data Sources:
 - https://simplemaps.com/data/world-cities
-    - City Name, Latitude, Longitude, Timezone
+    - City Name, Latitude, Longitude, Time Zone
 - https://open-meteo.com/
     - Current Conditions, Current Temperature
 
 #### Implementation Overview
 
-The Weather Tracker website consists of 5 pages: Home, Custom, Explore, Contact Us and About Us. The majority of the functionality comes in the custom and explore pages. These pages use imported data from SimpleMaps to then call the OpenMeteo API, which then aquires weather data using latitude and logitude coordinates. 
+The Weather Tracker website consists of 5 pages: Home, Custom, Explore, Contact Us and About Us. The majority of the functionality is found in the custom and explore pages. These pages use imported data from SimpleMaps to then call the OpenMeteo API, which then aquires weather data using latitude and logitude coordinates. 
 
 The custom page includes a search bar where users can pick which city widgets they would like to view on their dashboard. This is achieved using useState functions for selected cities and available cities. The explore page features buttons for each continent, as well as the whole world. These buttons filter widgets to only include the selected continent. This was similarily achieved using a useState function for the cities variable. Both of these pages make use of the City.jsx component, which uses the useEffect function to keep the city, weather and time data on the screen up to date. 
 
@@ -33,7 +33,7 @@ The site is built using the Chakra UI framework which was particularily benefici
 - Consists of the code for the landing page.
 
 ##### Custom.jsx
-- This code inlcudes the functionality to search for custom cities to add to a dashboard.
+- This code includes the functionality to search for custom cities to add to a dashboard.
 - It uses the Cities and City components.
 
 ##### Explore.jsx
