@@ -1,3 +1,4 @@
+/*
 import { Center, ChakraProvider, useColorMode, Button, Image, Flex, Text, Link, Box } from '@chakra-ui/react'
 
 function Instructions() {
@@ -33,19 +34,7 @@ function Instructions() {
                     w="50%"
                     
                 >
-                    {/*
-                    <Image
-                        src = "src/icons/custom.png"
-                        alt="sun"
-                        w="100%"
-                        h="auto"
-                        //display= 'block'
-                        objectFit='contain'
-                        borderRadius='30%'
-                        //maxW='310px'
-
-                    />
-                    */}
+                   
 
                     
                     <Image
@@ -87,3 +76,4 @@ function Instructions() {
   
   
 export default Instructions
+*/
