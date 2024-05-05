@@ -87,7 +87,7 @@ function Contact(props) {
                     <Image
                         //src="src/icons/weather_logo_light.png"
                         src = {props.colorMode === "dark" ? logo_dark : logo_light}
-                        alt="sun"
+                        alt="the weather tracker logo written in a cloud like font"
                         objectFit='cover'
                         margin='40px 10px 40px 10px'
                         w = {{base:'99%', sm: '500px', md:'750px'}}
@@ -116,7 +116,7 @@ function Contact(props) {
                                     w={{base:'90%', sm:"90%", lg:'50%'}}
                                     justifyContent='center'
                                 >
-                                    <Form style={form_style}>
+                                    <Form style={form_style} >
                                     
                                             <Flex
                                             flexDirection="row">
@@ -157,7 +157,7 @@ function Contact(props) {
                             <Image
 
                                 src = {props.colorMode === "dark" ? feeling_dark : feeling_light}
-                                alt="sun"
+                                alt="text let us know how you're feeling over a cloud and sun image"
                                 objectFit='contain'
                                 w={{base:'100%', sm:'75%', lg:'100%'}}
                             />

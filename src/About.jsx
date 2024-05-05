@@ -19,7 +19,7 @@ function About(props) {
                 <Image
                     //src="src/icons/weather_logo_light.png"
                     src = {props.colorMode === "dark" ? logo_dark : logo_light}
-                    alt="sun"
+                    alt="the weather tracker logo written in a cloud like font"
                     objectFit='cover'
                     margin='40px 10px 40px 10px'
                     w = {{base:'99%', sm: '500px', md:'750px'}}

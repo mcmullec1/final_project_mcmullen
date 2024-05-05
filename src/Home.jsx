@@ -36,7 +36,7 @@ function Home(props) {
                 <Image
                     //src = '/weather_images/globe.gif'
                     src = {globe}
-                    alt="a globe spinning"
+                    alt="a blue and green globe spinning"
                     objectFit='cover'
                     margin='10px 10px 10px 10px'
                     h="120px"
@@ -45,7 +45,7 @@ function Home(props) {
                 <Image
                     src = {props.colorMode === "dark" ? logo_dark : logo_light}
                     //src = {logo_src}
-                    alt="the weather tracker logo"
+                    alt="the weather tracker logo written in a cloud like font"
                     objectFit='cover'
                     margin='40px 10px 40px 10px'
                     //h="75px"
@@ -66,7 +66,6 @@ function Home(props) {
                             borderColor={props.style.button_border_colour}
                             backgroundColor={props.style.button_bg}
                             color='chakra-body-text'
-                            alt = 'click here for explore page'
 
                         
                         >Explore</Button>
@@ -79,9 +78,6 @@ function Home(props) {
                             borderColor={props.style.button_border_colour}
                             backgroundColor={props.style.button_bg}
                             color='chakra-body-text'
-                            alt = 'click here for custom page'
-
-                        
                         >Custom</Button>
                     </Link>
                 </Flex>
