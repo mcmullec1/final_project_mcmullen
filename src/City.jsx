@@ -65,7 +65,7 @@ function City({city}){
 
     let weather_img = cloud
     let bg_colour = "linear-gradient(#5F767D, #AEB5B8)"
-    console.log(parseInt(String(military_time).split(":")[0]))
+    const hour_value = parseInt(String(military_time).split(":")[0])
 
 
     if((weather["weather_code"]>50 && weather["weather_code"]<56)|| (weather["weather_code"]>=80 && weather["weather_code"]<=86)|| (weather["weather_code"]>60 && weather["weather_code"]<=65)){
@@ -99,11 +99,11 @@ function City({city}){
     else if(weather["weather_code"]==0){
         weather_img = sun
         bg_colour = "linear-gradient(#26A8DF, #7FB2C8)"
-        /*if(time.getHours() >= 21 || time.getHours() <= 5){
+        if(hour_value >= 21 || hour_value <= 5){
             bg_colour = "linear-gradient(#472F8A, #132997)"
             weather_img = moon
         }
-        */
+        
         //console.log(weather["weather_code"],"ITS SUN")
     }
     else{
