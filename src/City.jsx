@@ -13,6 +13,8 @@ import thunder from "/weather_images/thunderstorm.png"
 import sun_cloud from "/weather_images/sun_cloud.png"
 import sun from "/weather_images/sun.png"
 import moon from "/weather_images/moon.png"
+import moon_cloud from "/weather_images/moon_cloud.png"
+import moon_rain from "/weather_images/moon_rain.png"
 
 
 function City({city}){
@@ -65,12 +67,18 @@ function City({city}){
 
     let weather_img = cloud
     let bg_colour = "linear-gradient(#5F767D, #AEB5B8)"
+    if(hour_value >= 21 || hour_value <= 5){
+        weather_img = moon_cloud
+    }
     const hour_value = parseInt(String(military_time).split(":")[0])
 
 
     if((weather["weather_code"]>50 && weather["weather_code"]<56)|| (weather["weather_code"]>=80 && weather["weather_code"]<=86)|| (weather["weather_code"]>60 && weather["weather_code"]<=65)){
         weather_img = rain
         bg_colour = "#626290"
+        if(hour_value >= 21 || hour_value <= 5){
+            weather_img = moon_rain
+        }
         //console.log(weather["weather_code"],"ITS RAINING")
     }
     else if((weather["weather_code"]>=56 && weather["weather_code"]<=57) || (weather["weather_code"]>=66 && weather["weather_code"]<=67)){
@@ -94,6 +102,10 @@ function City({city}){
     else if(weather["weather_code"]>=1 && weather["weather_code"]<=2){
         weather_img = sun_cloud
         bg_colour = "linear-gradient(#26A8DF, #7FB2C8)"
+        if(hour_value >= 21 || hour_value <= 5){
+            bg_colour = "linear-gradient(#472F8A, #132997)"
+            weather_img = moon
+        }
         //console.log(weather["weather_code"],"ITS PARTLY SUN")
     }
     else if(weather["weather_code"]==0){
